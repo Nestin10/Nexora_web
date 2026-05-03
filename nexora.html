@@ -657,14 +657,13 @@
     .hero-stats { gap: 1.5rem; }
     .nav-center-name { display: none; }
 
-    /* Hero móvil: sin efecto scroll, layout fijo */
-    #hero-scroll-wrapper { height: 100vh; position: relative; }
+    /* Hero móvil: efecto scroll reducido */
+    #hero-scroll-wrapper { height: 200vh; }
     #hero {
-      position: relative;
+      position: sticky;
+      top: 0;
       height: 100vh;
       padding: 80px 1.2rem 2rem;
-      justify-content: center;
-      align-items: center;
     }
     .hero-content { width: 100%; }
     .hero-badge { font-size: 0.68rem; padding: 0.35rem 0.8rem; }
